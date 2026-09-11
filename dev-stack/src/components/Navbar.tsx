@@ -9,7 +9,7 @@ const navbar = () => {
                     <img src={logo} alt="" />
 
                     <ul className="flex items-center gap-5 ">
-                        <li className="text-[#DB2777]">HOME</li>
+                        <li className="text-[#DB2777] font-semibold">HOME</li>
                         <li>Technologies</li>
                         <li>Projects</li>
                         <li>About</li>
