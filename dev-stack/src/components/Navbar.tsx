@@ -25,8 +25,12 @@ const navbar = () => {
                     
                     
                     
+                    
 
                 </div>
+
+                  <div className="divider"></div>
+
             </nav>
             
         </div>
