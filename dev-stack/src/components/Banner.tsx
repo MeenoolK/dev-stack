@@ -12,9 +12,10 @@ const Banner = () => {
                 <h2 className="text-6xl font-bold">Development Stack</h2>
                 <p className='p-1 mt-6'>Explore frontend, backend, database, and tooling options, <br /> compare them side by side, and put together the stack <br /> that fits your next project.</p>
 
-                <div>
-                    <button>Explore Technologies</button>
-                    <button>Learn More</button>
+                <div className='mt-14 flex gap-3'>
+                    <button className='bg-linear-to-r from-[#F97316] to-[#EC4899] text-white px-6 py-3 rounded-lg font-semibold'>Explore Technologies</button>
+                      <button className="border px-6 py-3 rounded-lg font-semibold">Learn More</button>
+
                 </div>
 
             </div>
