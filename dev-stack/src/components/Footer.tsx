@@ -45,10 +45,10 @@ const Footer = () => {
            
             <hr className='border-[#dae0e7] w-420 ml-17 mt-12'/>
 
-            <div className='ml-17 flex mt-4 mb-10'>
+            <div className=' text-[#64748B] ml-17 flex mt-4 mb-10'>
                 <h2>© 2026 Dev Stack. All rights reserved.</h2>
 
-                <div className=' flex gap-7 ml-320'>
+                <div className='text-[#64748B] flex gap-7 ml-320'>
                     <h2>Privacy</h2>
                     <h2>Terms</h2>
 
