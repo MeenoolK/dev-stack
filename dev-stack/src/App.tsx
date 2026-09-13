@@ -1,22 +1,37 @@
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
-import Skills from './components/Skills'
-
+import Skills from './components/Skillfolder/Skills'
+import { Suspense } from 'react'
 
 
 import Footer from './components/Footer'
+import type { skillType } from './Types/SkillsType'
 
 
-import './App.css'
+
+
+const skillFetch = async():Promise<skillType[]> => {
+
+  const rest = await fetch('/SkillsData.json');
+  const dataSkill = await rest.json();
+  return dataSkill;
+}
+
 
 function App() {
+
+  const skillPromise = skillFetch();
   
 
   return (
     <>
     <Navbar/>
     <Banner/>
-    <Skills/>
+    <Suspense fallback={<h3>Collecting......</h3>}>
+      <Skills skillPromise ={skillPromise}/>
+
+    </Suspense>
+    
 
 
     <Footer/>

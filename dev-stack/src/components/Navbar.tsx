@@ -19,7 +19,7 @@ const navbar = () => {
 
                     <div className="flex gap-7">
                         <button>Sign In</button>
-                        <button className="text-white bg-[#D91B7E] rounded-4xl p-2">Sign Up</button>
+                        <button className="text-white bg-[#D91B7E] rounded-4xl p-2 font-semibold">Sign Up</button>
 
                     </div>
                     
